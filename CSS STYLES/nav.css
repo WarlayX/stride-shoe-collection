@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 5px 80px;
+  background-color: #000000;
+  /*font-family: "Space Grotesk", sans-serif;*/
+  font-family: "Roboto", sans-serif;
+}
+nav{
+  max-width: 1400px;
+  height: 60px;
+  margin: auto;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo{
+  text-decoration: none;
+  color:#ffffff;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.nav-menu-log{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-menu ul{
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+  list-style: none;
+}
+.nav-menu li a{
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  padding-bottom: 8px;
+}
+.nav-menu li a::after{
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transform-origin: center;
+  width: 150%;
+  height: 2px;
+  background: #ffffff;
+  transition: transform 0.4s ease;
+}
+.nav-menu li a:hover::after{
+  transform: translateX(-50%) scaleX(1);
+}
+.nav-log-signup{
+  font-family: "Roboto", sans-serif;
+  padding: 8px 12px;
+  color: #ffffff;
+  background-color: #0d0d0d;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+}
+.nav-log-signup:hover{
+  color: #1d1c1c;
+  background-color: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+.side-bar-open{
+  cursor: pointer;
+  display: none;
+}
+.side-toggle{
+  display: none;
+}
+
+@media (max-width: 890px){
+  body{
+  margin: 0;
+  }
+  nav{ 
+    background-color: #0d0d0d;
+    height: 50px;
+  }
+  .navbar{
+    background-color: #0d0d0d;
+    height: 50px;
+    margin: 0 20px;
+  }
+  .side-bar-open{
+    display: block;
+    padding: 3px;
+  }
+  .nav-menu-log{
+    position: fixed;
+    height: 100%;
+    width: 225px;
+    right: -100%;
+    top: 0;
+    padding: 20px;
+    z-index: 100;
+    background-color: #0d0d0d;
+    transition: all 0.4s ease;
+    flex-direction: column;
+  }
+  nav.side-open-active .nav-menu-log{
+    right: 0;
+  }
+  .nav-menu ul{
+    flex-direction: column;
+  }
+  .side-toggle{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .side-bar-close{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .nav-menu li a{
+    display: block;
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+  nav.side-open-active .nav-fade{
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+}
