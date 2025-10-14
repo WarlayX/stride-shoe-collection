@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
     <link rel="stylesheet" href="CSS STYLES/main.css"/>
     <link rel="icon" type="image/png" href="IMAGES/sneakers/future-sneaker-3-re.png">
-    <title>Stride</title> 
+    <title>Stride | Sign Up</title> 
   </head>
-  <body>
+    <body>
       <header><!--Navbar-->
         <nav>
           <div class="navbar">
-            <span><a class="nav-logo nav-fade" href="#">Stride</a></span>
+            <span><a class="nav-logo nav-fade" href="index.html">Stride</a></span>
             <div class="nav-menu-log">
               <div class="side-toggle">
                 <img class="side-bar-close" src="IMAGES/white cancel.png">
-                <span><a class="nav-logo" href="#">Stride</a></span>          
+                <span><a class="nav-logo" href="index.html">Stride</a></span>          
               </div>
               <div class="nav-menu">
                 <ul>
@@ -37,7 +37,7 @@
                 </ul>
               </div>
               <div class="nav-log">
-                <a href="sign.html"><button class="nav-log-signup">Sign up now</button></a>
+                <button class="nav-log-signup">Sign up now</button>
               </div>
             </div>
             <img class="side-bar-open" src="IMAGES/hamburger-menu.png">
@@ -45,73 +45,43 @@
         </nav>
       </header>
       <main>
-        <section><!--Writeup & Sneaker Image-->
-          <div class="sneak-Writeup-image">
-            <div class="sneak">
-              <h1 data-aos="fade-up">Your Everyday Sneakers, Elevated</h1>
-              <p>Discover premium-crafted sneakers made for movement, expression, and all-day comfort. From streetwear essentials to limited drops - we've got your next pair.</p>
-              <div class="sneak-button">
-                <button class="sneak-shopnow">Shop Now</button>
-                <button class="sneak-learnmore">Explore Collection</button>
-              </div>
-              <div class="writeUp">
-                <div class="writeUp-text">
-                  <h2>$444b+</h2>
-                  <p>of merchants worldwide</p>
+        <section><!--sign Up page-->
+          <div class="signup-container">
+            <div class="signup-box">
+              <h1>Join Stride</h1>
+              <p>Step into style — create your account now</p>
+              <form action="#" class="signup-form">
+                <div class="input-group">
+                  <i class="ri-user-line"></i>
+                  <input type="text" placeholder="Full Name" required />
                 </div>
-                <div class="writeUp-text">
-                  <h2>170+</h2>
-                  <p>countries represented</p>
+                <div class="input-group">
+                  <i class="ri-mail-line"></i>
+                  <input type="email" placeholder="Email Address" required/>
                 </div>
-                <div class="writeUp-text">
-                  <h2>10%</h2>
-                  <p>global economic activity</p>
+                <div class="input-group">
+                  <i class="ri-mail-line"></i>
+                  <input type="username" placeholder="Create Username" required/>
                 </div>
-              </div>
-              <div class="sneak-logo">
-                <div class="logo">
-                  <img src="IMAGES/logos/Shells-re.png"><span>SHELLS</span>      
+                <div class="input-group">
+                  <i class="ri-lock-2-line"></i>
+                  <input id="password"  type="password" placeholder="Create Password" required />
                 </div>
-                <div class="logo">
-                  <img src="IMAGES/logos/smartfinders-re.png"><span>SmartFinders</span>
+                <div class="input-group">
+                  <i class="ri-lock-2-line"></i>
+                  <input id="confirmPassword" type="password" placeholder="Confirm Password" required />
                 </div>
-                <div class="logo">
-                  <img src="IMAGES/logos/artvenue-re.png"><span>ArtVenue</span>
-                </div>
-                <div class="logo">
-                  <img src="IMAGES/logos/waves-re.png"><span>WAVES</span>
-                </div>
-              </div>
-            </div>
-            <div class="sneak-image-socials">
-              <div class="sneak-slideshow">
-                <div class="sneak-image">
-                  <img src="IMAGES/sneakers/future-sneaker-1-re.png">
-                </div>
-                <div class="sneak-image">
-                  <img src="IMAGES/sneakers/SNEAKERS-7.jpg">
-                </div>
-                <div class="sneak-image">
-                  <img src="IMAGES/sneakers/SNEAKERS-3.jpg">
-                </div>
-              </div>
-              <div class="sneak-socials">
-                <img src="IMAGES/social media/instagram-re.png"/>
-                <img src="IMAGES/social media/facebook-re.png"/>
-                <img src="IMAGES/social media/twitter-re.png"/>
-                <img src="IMAGES/social media/linkedin-re.png"/>
-              </div>
+                <p id="message"></p>
+                <button type="submit" class="signup-btn">Sign Up</button>
+                <p class="signin-link">Already have an account? <a href="log.html">Log In</a></p>
+              </form>
             </div>
           </div>
         </section>
       </main>
       <footer>
-        <div class="sneak-stride">
-          <h1>(c) Stride. All Rights Reserved</h1>
-        </div>
       </footer>
       <script src="JAVASCRIPT/nav.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </body>
+    </body>
 </html>
-<!----> 

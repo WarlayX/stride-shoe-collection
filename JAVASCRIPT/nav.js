@@ -20,3 +20,23 @@ document.addEventListener("DOMContentLoaded", function () {
     once: false     // false = repeat on scroll, true = animate only once
   });
 });
+
+
+//confirm password check
+  const password = document.getElementById("password");
+  const confirmPassword = document.getElementById("confirmPassword");
+  const message = document.getElementById("message");
+
+  confirmPassword.addEventListener("input", () => {
+    if (confirmPassword.value === "") {
+      message.textContent = "";
+      return;
+    }
+    if (confirmPassword.value === password.value) {
+      message.textContent = "✅ Passwords match";
+      message.style.color = "limegreen";
+    } else {
+      message.textContent = "❌ Passwords do not match";
+      message.style.color = "crimson";
+    }
+  });
