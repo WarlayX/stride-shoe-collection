@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Happy+Monkey&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-    <link rel="stylesheet" href="CSS STYLES/log.css"/>
+    <link rel="stylesheet" href="CSS STYLES/pricing.css"/>
     <link rel="icon" type="image/png" href="IMAGES/sneakers/future-sneaker-3-re.png">
-    <title>Stride | Login</title> 
+    <title>Stride | pricing</title> 
   </head>
   <body>
     <header><!--Navbar-->
@@ -46,25 +46,48 @@
     </header>
     <main>
       <section>
-        <div class="main-container">
-          <div class="login-container">
-            <div class="login-box">
-              <h1>Welcome Back</h1>
-              <p>Login to your Stride account</p>
-              <form class="login-form" onsubmit="return validateLogin()">
-                <div class="input-group">
-                  <label for="username">Username or Email</label>
-                  <input type="text" id="username" name="username" autocomplete="username" required>
-                </div>
-                <div class="input-group">
-                  <label for="password">Password</label>
-                  <input type="password" id="password" name="password" autocomplete="current-password" required>
-                </div>
-                <button type="submit" class="login-btn">Login</button>
-                <p class="signup-text">
-                  Don't have an account? <a href="sign.html">Sign up</a>
-                </p>
-              </form>
+        <div class="pricing-section">
+          <h1>Our Pricing</h1>
+          <p>Choose the plan that best fits your stride.</p>
+
+          <div class="pricing-container">
+            <!-- Starter Plan -->
+            <div class="pricing-card">
+              <img src="images/pricing/starter.png" alt="Starter Plan">
+              <h2>Starter</h2>
+              <p class="price">$49</p>
+              <ul>
+                <li>1 Pair / Month</li>
+                <li>Basic Sneaker Models</li>
+                <li>Free Delivery</li>
+              </ul>
+              <button>Get Started</button>
+            </div>
+
+            <!-- Classic Plan -->
+            <div class="pricing-card highlight">
+              <img src="images/pricing/classic.png" alt="Classic Plan">
+              <h2>Classic</h2>
+              <p class="price">$99</p>
+              <ul>
+                <li>3 Pairs / Month</li>
+                <li>Exclusive Designs</li>
+                <li>Free Delivery + Custom Box</li>
+              </ul>
+              <button>Subscribe Now</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card">
+              <img src="images/pricing/premium.png" alt="Premium Plan">
+              <h2>Premium</h2>
+              <p class="price">$149</p>
+              <ul>
+                <li>Unlimited Pairs</li>
+                <li>Custom-Fit Sneakers</li>
+                <li>Priority Delivery</li>
+              </ul>
+              <button>Go Premium</button>
             </div>
           </div>
         </div>

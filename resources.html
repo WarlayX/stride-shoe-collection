@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Happy+Monkey&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-    <link rel="stylesheet" href="CSS STYLES/log.css"/>
+    <link rel="stylesheet" href="CSS STYLES/resources.css"/>
     <link rel="icon" type="image/png" href="IMAGES/sneakers/future-sneaker-3-re.png">
-    <title>Stride | Login</title> 
+    <title>Stride | Resources</title> 
   </head>
   <body>
     <header><!--Navbar-->
@@ -45,28 +45,58 @@
       </nav>
     </header>
     <main>
+      <section><!--Resources header-->
+        <div class="resources-header">
+          <h1>Resources</h1>
+          <p>Your go-to hub for sneaker care, style, and guides.</p>
+        </div>
+      </section>
       <section>
-        <div class="main-container">
-          <div class="login-container">
-            <div class="login-box">
-              <h1>Welcome Back</h1>
-              <p>Login to your Stride account</p>
-              <form class="login-form" onsubmit="return validateLogin()">
-                <div class="input-group">
-                  <label for="username">Username or Email</label>
-                  <input type="text" id="username" name="username" autocomplete="username" required>
-                </div>
-                <div class="input-group">
-                  <label for="password">Password</label>
-                  <input type="password" id="password" name="password" autocomplete="current-password" required>
-                </div>
-                <button type="submit" class="login-btn">Login</button>
-                <p class="signup-text">
-                  Don't have an account? <a href="sign.html">Sign up</a>
-                </p>
-              </form>
+        <div class="resources-container">
+          <div class="resource-section">
+            <h2>Sneaker Care Tips</h2>
+            <div class="resource-grid">
+              <div class="resource-card">
+                <h3>How to Clean Your Sneakers</h3>
+                <p>Keep your sneakers spotless with simple cleaning methods that protect the material and color.</p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+
+              <div class="resource-card">
+                <h3>Storage Hacks</h3>
+                <p>Learn smart ways to store sneakers to prevent odor, deformation, and fading.</p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+
+              <div class="resource-card">
+                <h3>Finding the Right Fit</h3>
+                <p>Discover how to pick the perfect Stride sneaker for your daily wear or sport routine.</p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
             </div>
           </div>
+
+          <!-- FAQ Section -->
+          <div class="resource-section">
+            <h2>FAQs</h2>
+            <div class="faq">
+              <details>
+                <summary>Do you offer international shipping?</summary>
+                <p>Yes, Stride ships globally with standard and express options.</p>
+              </details>
+
+              <details>
+                <summary>Can I return worn sneakers?</summary>
+                <p>We accept returns on unworn sneakers within 14 days of delivery.</p>
+              </details>
+
+              <details>
+                <summary>How can I find my correct size?</summary>
+                <p>Use our online Size Guide — it helps you match your perfect fit based on measurements.</p>
+              </details>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>

@@ -1,0 +1,138 @@
+@import url('nav.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  line-height: 1.7;
+}
+
+/* Header */
+.resources-header {
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 1px solid #111;
+}
+
+.resources-header h1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #07e7f3;
+}
+
+.resources-header p {
+  color: #ccc;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.resources-container {
+  width: 85%;
+  margin: 60px auto;
+}
+
+/* Section Headings */
+.resource-section h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  border-left: 4px solid #07e7f3;
+  padding-left: 12px;
+}
+
+/* Cards */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.resource-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid #1c1c1c;
+}
+
+.resource-card:hover {
+  border: 1px solid #07e7f3;
+  transform: translateY(-6px);
+}
+
+.resource-card h3 {
+  color: #07e7f3;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.resource-card p {
+  color: #bbb;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #07e7f3;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background: #07e7f3;
+  color: #000;
+}
+
+/* FAQ Section */
+.faq details {
+  background: #111;
+  border: 1px solid #1c1c1c;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  transition: border 0.3s ease;
+}
+
+.faq details:hover {
+  border: 1px solid #07e7f3;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+}
+
+.faq p {
+  padding-top: 10px;
+  color: #bbb;
+}
+
+/* Footer */
+.resources-footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #111;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .resources-header h1 {
+    font-size: 28px;
+  }
+
+  .resources-container {
+    width: 90%;
+  }
+}
