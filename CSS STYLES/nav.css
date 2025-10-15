@@ -8,6 +8,11 @@ body{
   font-family: "Roboto", sans-serif;
 }
 nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   max-width: 1400px;
   height: 60px;
   margin: auto;
